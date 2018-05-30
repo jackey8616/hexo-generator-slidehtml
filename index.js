@@ -1,5 +1,5 @@
 /** 
- * Created by clooooode on 2018/05/30.
+ * Created by clo5de on 2018/05/30.
  */
 
 var fs = require('fs');
@@ -32,7 +32,7 @@ hexo.on("generateBefore", function(){
             var year = date.getFullYear().toString();
             var month = ("0" + (date.getMonth() + 1)).slice(-2).toString();
             var day = ("0" + date.getDate()).slice(-2).toString();
-            //var outPath = path.join(outPathRoot,year,month,day, title);
+            //var outPath = path.join(outPathRoot, year, month, day, title);
             var outPath = path.join(outPathRoot, 'slides');
             if (!fs.existsSync(outPath)) {
                 mkdirp(outPath, function (err) {
@@ -52,7 +52,7 @@ hexo.on("generateBefore", function(){
             fs.writeFile(path.join(outPath, _item.toString().replace('.md', '.html')), pageData, function (err) {
                 if (err) {
                     console.log(err);
-                    throw err;
+                    //throw err;
                 }
             });
         }
