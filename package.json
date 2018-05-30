@@ -1,5 +1,24 @@
 {
   "name": "hexo-generator-slidehtml",
-  "version": "0.0.1",
-  "main": "index"
+  "version": "1.0.0",
+  "description": "A hexo plugin to generate slide html when build / generating hexo project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackey8616/hexo-generator-slidehtml.git"
+  },
+  "keywords": [
+    "hexo",
+    "slide",
+    "reveal.js"
+  ],
+  "author": "clo5de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackey8616/hexo-generator-slidehtml/issues"
+  },
+  "homepage": "https://github.com/jackey8616/hexo-generator-slidehtml#readme"
 }
