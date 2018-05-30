@@ -3,6 +3,11 @@
  */
 'use strict';
 
-var hexo = hexo != undefined ? hexo : {};
+var assign = require('object-assign');
+
+var config = hexo.config.slidehtml = assign({
+    titleMerge: true
+}, hexo.config.slidehtml);
 
 hexo.extend.generator.register('slidehtml', require('./lib/generator'));
+
