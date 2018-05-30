@@ -29,7 +29,7 @@ after_script:
   - git config user.email "jackey8616@gmail.com"
   - git add . 
   - git commit -m "Update by Travis-CI" 
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" origin gh-pages
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 
 branches: 
   only: 
@@ -37,4 +37,4 @@ branches:
 
 env: 
   global: 
-- GH_REF: github.com/jackey8616/hexo-generator-slidehtml.git
+    - GH_REF: github.com/jackey8616/hexo-generator-slidehtml.git
