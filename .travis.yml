@@ -1,0 +1,40 @@
+language: node_js
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+before_install: 
+  - npm install -g hexo
+  - npm install -g hexo-cli
+
+install:
+  - npm install
+
+before_script:
+  - npm install -g mocha
+  - npm install git+https://git@${GH_REF}
+  - git clone --branch gh-pages-build https://${GH_REF} public
+
+script: 
+  - hexo cl
+  - hexo g
+
+after_script: 
+  - cd ./public 
+  - git init 
+  - git config user.name "clooooode"
+  - git config user.email "jackey8616@gmail.com"
+  - git add . 
+  - git commit -m "Update by Travis-CI" 
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" origin gh-pages
+
+branches: 
+  only: 
+    - gh-pages-build
+
+env: 
+  global: 
+- GH_REF: github.com/jackey8616/hexo-generator-slidehtml.git
