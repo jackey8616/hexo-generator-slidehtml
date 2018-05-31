@@ -1,4 +1,5 @@
-# hexo-generator-slidehtml
+# hexo-generator-slidehtml  
+[![npm version](https://badge.fury.io/js/hexo-generator-slidehtml.svg)](https://badge.fury.io/js/hexo-generator-slidehtml)
 
 A hexo plugin to generate slide html when build / generating hexo project.
 
@@ -25,6 +26,9 @@ slidehtml:
   // Merge title as first slide page.
   titleMerge: true
 ```
+
+# Installation  
+`npm i hexo-generator-slidehtml`
 
 # License
 MIT
