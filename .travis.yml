@@ -15,7 +15,6 @@ install:
 
 before_script:
   - npm install -g mocha
-  - npm install git+https://git@${GH_REF}
   - git clone --branch gh-pages-build https://${GH_REF} public
 
 script: 
