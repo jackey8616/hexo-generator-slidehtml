@@ -6,7 +6,9 @@
 var assign = require('object-assign');
 
 var config = hexo.config.slidehtml = assign({
-    titleMerge: true
+    titleMerge: true,
+    horizontalSeparator: '^\\n---\\n',
+    verticalSeparator: '^\\n--\\n'
 }, hexo.config.slidehtml);
 
 hexo.extend.generator.register('slidehtml', require('./lib/generator'));
