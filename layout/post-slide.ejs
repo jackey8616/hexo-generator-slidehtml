@@ -64,9 +64,8 @@
                          data-separator="<%- config.horizontalSeparator %>"
                          data-separator-vertical="<%- config.verticalSeparator %>"
                          data-separator-notes="^Note:">
-  <script type="text/template"><%- page %>
-  </script>
-</section>
+                    <script type="text/template"><%- page %></script>
+                </section>
             </div>
         </div>
 
@@ -74,10 +73,10 @@
         <script src="https://cdn.bootcss.com/reveal.js/3.4.1/js/reveal.min.js"></script>
 
         <script>
-            // More info https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                history: true,
- // 是否在右下角展示控制条
+// More info https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  history: true,
+  // 是否在右下角展示控制条
   controls: true,
   // 是否显示演示的进度条
   progress: true,
@@ -139,14 +138,14 @@
   // - 设置为 0 时，禁止沿轴运动
   parallaxBackgroundHorizontal: null,
   parallaxBackgroundVertical: null,
-                // More info https://github.com/hakimel/reveal.js#dependencies
-                dependencies: [
-                    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/marked.js' },
-                    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.min.js' },
-                    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes/notes.min.js', async: true },
-                    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-                ]
-            });
+  // More info https://github.com/hakimel/reveal.js#dependencies
+  dependencies: [
+    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/marked.js' },
+    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.min.js' },
+    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes/notes.min.js', async: true },
+    { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
         </script>
     </body>
 </html>
