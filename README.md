@@ -18,8 +18,13 @@ slidehtml: true
 this will generate a slide page for it.  
 
 # Demo  
-[Aritcle](https://jackey8616.github.io/hexo-generator-slidehtml/2018/05/30/hello-world/)  
-[Slide](https://jackey8616.github.io/hexo-generator-slidehtml/2018/05/30/hello-world/slide.html)  
+```
+Because hexo would update posts link everytime after edit it.
+So plz everyone intertesting in demo, just reference this project's site, every post in it have different setup.
+You can find the post's source in branch gh-pages-build. 
+And each post add a tail url or /slide.html can check its slide.
+```
+[Website](https://jackey8616.github.io/hexo-generator-slidehtml/)  
 
 # Config
 ```yml
