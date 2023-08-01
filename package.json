@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-slidehtml",
-  "version": "0.0.63",
+  "version": "0.0.64",
   "description": "A hexo plugin to generate slide html when build / generating hexo project.",
   "main": "index.js",
   "scripts": {
