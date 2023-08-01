@@ -11,7 +11,8 @@ var config = hexo.config.slidehtml = assign({
     titleMerge: true,
     horizontalSeparator: '^\\n---\\n',
     verticalSeparator: '^\\n--\\n',
-    startTag: '<!-- Slide Start -->'
+    startTag: '<!-- Slide Start -->',
+    slideTransition: 'none', // none/fade/slide/convex/concave/zoom
 }, hexo.config.slidehtml);
 
 hexo.extend.generator.register('slidehtml', require('./lib/generator'));

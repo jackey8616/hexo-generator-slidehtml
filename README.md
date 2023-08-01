@@ -32,8 +32,10 @@ slidehtml:
   // Merge title as first slide page.
   titleMerge: true
   // For reveal.js's page separator, remember escape special character like '\' .
-  horizontalSeparator: '^\\n---\\n',
+  horizontalSeparator: '^\\n---\\n'
   verticalSeparator: '^\\n--\\n'
+  // none/fade/slide/convex/concave/zoom default is none.
+  slideTransition: none
 ```
 
 # Installation  
@@ -47,10 +49,11 @@ slidehtml:
   titleMerge: true
   horizontalSeparator: ''
   verticalSeparator: ''
+  slideTransition: none
 ---
 ```
-Be advice that: plugin Config useing YAML as format. so it's need escape char(\) for special char.  
-But post settup is Markdown format, so escape char(\) only focus on markdown itself.  
+Be advice that: plugin Config using YAML as format. so it's need escape char(\) for special char.  
+But post setup is Markdown format, so escape char(\) only focus on markdown itself.  
 
 # License
 MIT
