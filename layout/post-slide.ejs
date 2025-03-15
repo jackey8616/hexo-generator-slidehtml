@@ -140,6 +140,7 @@
                 parallaxBackgroundVertical: null,
                 // More info https://github.com/hakimel/reveal.js#dependencies
                 dependencies: [
+                    <% if (config.latex) { %>{ src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/math/math.min.js' },<% } %>
                     { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/marked.js' },
                     { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/markdown/markdown.min.js' },
                     { src: 'https://cdn.bootcss.com/reveal.js/3.4.1/plugin/notes/notes.min.js', async: true },

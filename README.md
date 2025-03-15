@@ -55,5 +55,14 @@ slidehtml:
 Be advice that: plugin Config using YAML as format. so it's need escape char(\) for special char.  
 But post setup is Markdown format, so escape char(\) only focus on markdown itself.  
 
+# LaTeX
+latex is an optional attribute, only set it true will enable it.
+```
+---
+slidehtml:
+  latex: true
+---
+```
+
 # License
 MIT
